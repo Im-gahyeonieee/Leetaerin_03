@@ -16,6 +16,16 @@ namespace taerin
 
 
         public:
+            student( int i = 1234567, int s = 0 , char g = 'F') 
+            : id {i}, score{s}, grade{g} 
+            {
+                testId();
+                testScore();
+                calGrade();
+            }
+
+
+
             void input();
             void print();
 
